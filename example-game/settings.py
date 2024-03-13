@@ -8,4 +8,4 @@ class Settings:
         self.screen_width = 1024
         self.screen_height = 512
         self.caption = "Space Blaster"
-        self.background_color = (0,0,95)
+        self.background_color = (0,0,90)
