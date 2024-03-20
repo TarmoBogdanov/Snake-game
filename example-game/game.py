@@ -2,6 +2,7 @@ import pygame
 from player import Player
 from settings import Settings
 import game_functions as gf
+from bubble import Bubble
 
 def run_game():
     pygame.init()
@@ -11,10 +12,13 @@ def run_game():
     pygame.display.set_caption(game_settings.caption)
     
     player = Player(screen)
+    
+    bubbles = pygame.sprite.Group()
 
     while True:
-        gf.check_events(player)
+        gf.check_events(game_settings, screen, player, bubbles)
         player.update()
-        gf.update_screen(game_settings, screen, player)
+        bubbles.update()
+        gf.update_screen(game_settings, screen, player, bubbles)
      
 run_game()
