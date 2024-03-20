@@ -3,7 +3,7 @@ from player import Player
 from settings import Settings
 import game_functions as gf
 from bubble import Bubble
-#
+##
 def run_game():
     pygame.init()
     game_settings = Settings()
