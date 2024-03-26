@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
         self.moving_left = False
         self.moving_up = False
         self.moving_down = False
-    
+#     
     def update(self):
         if self.moving_right:
             self.rect.move_ip(5, 0)

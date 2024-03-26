@@ -40,7 +40,7 @@ def update_bubbles(player, bubbles):
     hitted_bubble = pygame.sprite.spritecollideany(player, bubbles)
     if hitted_bubble != None:
         hitted_bubble.kill()
-
+# 
 def update_screen(game_settings, screen, player, bubbles, clock):
     """Update image on screen and draw new screen"""
     

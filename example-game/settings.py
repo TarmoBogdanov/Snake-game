@@ -1,6 +1,6 @@
 class Settings:
     """Class for game settings"""
-    
+#     
     
     def __init__(self):
         """Initialize game settings"""
