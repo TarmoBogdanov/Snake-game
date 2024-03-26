@@ -7,7 +7,7 @@ class Settings:
         # Screen settings
         self.screen_width = 800
         self.screen_height = 512
-        self.caption = "Space Blaster"
+        self.caption = "Avoid The Bubbles"
         self.background_color = (0,0,90)
         
         self.bubble_min_r = 10

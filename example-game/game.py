@@ -13,12 +13,15 @@ def run_game():
     
     player = Player(screen)
     
+    clock = pygame.time.Clock()
+    
     bubbles = pygame.sprite.Group()
 
     while True:
         gf.check_events(game_settings, screen, player, bubbles)
         player.update()
+        gf.update_bubbles(player, bubbles)
         bubbles.update()
-        gf.update_screen(game_settings, screen, player, bubbles)
+        gf.update_screen(game_settings, screen, player, bubbles, clock)
      
 run_game()

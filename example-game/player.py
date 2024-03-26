@@ -11,7 +11,7 @@ class Player(pygame.sprite.Sprite):
         self.screen = screen
         self.screen_rect = screen.get_rect()
         
-        self.player = pygame.Surface((75,25))
+        self.player = pygame.Surface((25,25))
         self.player.fill((255,255,255))
         self.rect = self.player.get_rect()
         
@@ -22,13 +22,13 @@ class Player(pygame.sprite.Sprite):
     
     def update(self):
         if self.moving_right:
-            self.rect.move_ip(10, 0)
+            self.rect.move_ip(5, 0)
         if self.moving_left:
-            self.rect.move_ip(-10, 0)
+            self.rect.move_ip(-5, 0)
         if self.moving_up:
-            self.rect.move_ip(0, -10)
+            self.rect.move_ip(0, -5)
         if self.moving_down:
-            self.rect.move_ip(0, 10)
+            self.rect.move_ip(0, 5)
             
         if self.moving_left and self.rect.left < 0:
             self.rect.left = 0

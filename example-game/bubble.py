@@ -36,7 +36,6 @@ class Bubble(pygame.sprite.Sprite):
         
         
     def blit_me(self):
-        print(self.rect.x, self.rect.y)
         self.screen.blit(self.bubble, self.rect)
     
     def update(self):

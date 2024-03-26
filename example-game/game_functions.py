@@ -3,8 +3,8 @@ import pygame
 from bubble import Bubble
 
 pygame.init()
-ADDBUBBLE = pygame.USEREVENT + 10
-pygame.time.set_timer(ADDBUBBLE, 1000)
+ADDBUBBLE = pygame.USEREVENT + 1
+pygame.time.set_timer(ADDBUBBLE, 250)
 
 def check_events(game_settings, screen, player, bubbles):
     """Check keyboard events"""
@@ -36,7 +36,12 @@ def create_bubble(game_settings, screen, bubbles):
     new_bubble = Bubble(screen, game_settings)
     bubbles.add(new_bubble)
 
-def update_screen(game_settings, screen, player, bubbles):
+def update_bubbles(player, bubbles):
+    hitted_bubble = pygame.sprite.spritecollideany(player, bubbles)
+    if hitted_bubble != None:
+        hitted_bubble.kill()
+
+def update_screen(game_settings, screen, player, bubbles, clock):
     """Update image on screen and draw new screen"""
     
     screen.fill(game_settings.background_color)
@@ -46,5 +51,6 @@ def update_screen(game_settings, screen, player, bubbles):
     for bubble in bubbles:
         bubble.blit_me()
     
+    clock.tick(60)
+        
     pygame.display.flip()
-    
