@@ -11,4 +11,4 @@ class Settings:
         self.background_color = (0,0,90)
         
         self.bubble_min_r = 10
-        self.bubble_max_r = 50
+        self.bubble_max_r = 60
