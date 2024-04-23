@@ -1,0 +1,39 @@
+Snake Game
+
+Welcome to the classic Snake game! This simple yet addictive game will keep you entertained for hours as you strive to grow your snake as long as possible without hitting the walls or yourself.
+
+How to Play:
+
+    Controls: Use the arrow keys (Up, Down, Left, Right) to control the direction of the snake.
+
+    Objective: Guide the snake to eat the food (designated by a green dot) without colliding with the walls or the snake's own body. Each time the snake eats food, it grows longer.
+
+    Game Over: The game ends if the snake collides with the walls or itself. Try to achieve the highest score possible by growing the snake as long as you can.
+
+Features:
+
+    Scoring: There is no scoring system in this version of the game. The main goal is to see how long you can grow your snake without colliding with anything.
+
+    Speed: As the snake grows longer, the game stays at the same speed, but the snakes length.
+
+    Grid: The game is played on a grid, making it easier to navigate and plan your moves.
+
+Tips:
+
+    Plan Ahead: Anticipate the snake's movements to avoid trapping yourself.
+
+    Use Walls: Utilize the walls to your advantage, especially when the snake is long and maneuvering becomes tricky.
+
+    Stay Calm: Don't panic if the snake grows long. Keep a cool head and focus on precise movements.
+
+Credits:
+
+This Snake game was created by Tarmo Bogdanov using Python. Feel free to modify and distribute it as you wish. Enjoy and happy gaming!
+
+Feedback:
+
+I would love to hear your feedback! If you encounter any bugs or have suggestions for improvement, please contact Tarmo Bogdanov at Tarmo.bogdanov@voco.ee.
+
+Have Fun!
+
+Get ready to slither and slide your way to victory! Enjoy playing the Snake game and see how long you can grow your snake!

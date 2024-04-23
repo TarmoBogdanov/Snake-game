@@ -9,7 +9,7 @@ GRID_HEIGHT = 25
 pygame.init()
 screen = pygame.display.set_mode((GRID_WIDTH * GRID_SIZE_X, GRID_HEIGHT * GRID_SIZE_Y))
 running = True
-
+#
 snake = []
 
 snake_direction = (1, 0)
